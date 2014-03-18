@@ -1,5 +1,5 @@
-# read data 2008quarter.csv
-d2008=read.csv("C:/+++++CDODATA/usingDataSet/2008quarter.csv")
+# read data https://github.com/YafeiXu/xyfQuantlet/blob/master/2008quarter.csv
+d2008=read.csv("YOUR DATA PATH")
 
 # do plot
 plot(as.Date(d2008[,2]),as.numeric(d2008[,6]), xlab="Quarterly Date", ylab="USD Millions",

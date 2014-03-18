@@ -1,5 +1,5 @@
-# read data 2000year.csv
-d2000=read.csv("C:/+++++CDODATA/usingDataSet/2000year.csv") 
+# read data https://github.com/YafeiXu/xyfQuantlet/blob/master/2000year.csv
+d2000=read.csv("YOUR DATA PATH") 
 
 # do plot
 plot(as.Date(d2000[,1]),as.numeric(d2000[,6]), xlab="Yearly Date", ylab="USD Millions",
