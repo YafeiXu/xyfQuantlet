@@ -1,4 +1,4 @@
-# MARgaussianCopulaSimulation
+# MARgss
 # 10000 Monte Carlo simulations for $3$-dimensional Gaussian copula with exchangeable correlation matrix
 library(copula)
 library(rgl)
