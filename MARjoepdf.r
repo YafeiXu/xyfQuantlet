@@ -1,11 +1,13 @@
-# MARgspdf
+# MARjoepdf
 library(copula)
 library(rgl)
 M=10000 # number of Monte Carlo simulation
 rho=.7 # single parameter in correlation matrix of the 3-dimensional Gaussian copula
 d=2 # dimension of the Gaussian copula
-norm.cop <- normalCopula(rho, dim = d, dispstr = "ex") 
-U <- rCopula(M, norm.cop) 
+theta2Input=0.7 # Kendall's tau
+
+joe.cop <- joeCopula(iTau(joeCopula(), theta2Input), dim = d)
+U <- rCopula(M, clayton.cop ) 
 u1=U[,1]
 u2=U[,2]
 
@@ -17,7 +19,7 @@ y=seq(0,1,length.out=ng)
 fhat=function(x,y){
 u=cbind(x,y)
 v=numeric()
-v=dCopula(u, norm.cop , log=FALSE)
+v=dCopula(u, joe.cop, log=FALSE)
 return(v)
 }
 

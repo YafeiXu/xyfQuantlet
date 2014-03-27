@@ -1,11 +1,14 @@
-# MARgspdf
+# MARtpdf
 library(copula)
 library(rgl)
 M=10000 # number of Monte Carlo simulation
 rho=.7 # single parameter in correlation matrix of the 3-dimensional Gaussian copula
 d=2 # dimension of the Gaussian copula
-norm.cop <- normalCopula(rho, dim = d, dispstr = "ex") 
-U <- rCopula(M, norm.cop) 
+dOfF=3 # degree of freedom
+theta1Input=0.7 # parameter in t-copula
+
+t.cop1 <- tCopula(theta1Input, dim = d, dispstr = "ex",df = 3, df.fixed = TRUE)
+U <- rCopula(M, t.cop1 ) 
 u1=U[,1]
 u2=U[,2]
 
@@ -17,7 +20,7 @@ y=seq(0,1,length.out=ng)
 fhat=function(x,y){
 u=cbind(x,y)
 v=numeric()
-v=dCopula(u, norm.cop , log=FALSE)
+v=dCopula(u, t.cop1  , log=FALSE)
 return(v)
 }
 
