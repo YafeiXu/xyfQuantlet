@@ -1,4 +1,4 @@
-# MAR2dpdf
+# MARcorrsmile
 
 #####-----vGaussianTranche-CDS Index Tranche 20071102
 vGaussianTranche=function(rhoInput,MInput,dateInput){
