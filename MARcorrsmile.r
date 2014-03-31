@@ -34,14 +34,6 @@ R=0.4#recoveryInput
 IntRate=numeric()
 IntRate=0.03#intRateInput
 
-
-
-
-
-
-
-
-
 ################################################################################
 #---check needed packages  
 is.installed=list()
