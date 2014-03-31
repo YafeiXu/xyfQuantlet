@@ -1,3 +1,5 @@
+# MAR2dpdf
+
 #####-----vGaussianTranche-CDS Index Tranche 20071102
 vGaussianTranche=function(rhoInput,MInput,dateInput){
 #vGaussianTranche(.3,100,"2007-11-02")
@@ -275,7 +277,7 @@ spread5[i]=vGaussianTranche(rho[i],10000,"2007-11-02")[5]*10000
 result5=cbind(abs(spread5-24.205),rho)
 result5[which(result5[,1]==min(result5[,1])),]
 
-# Results under 10000 Monte Carlo simulation with Gaussian copula 
+# Results the Gaussian copula 
 # 0.35761523
 # 0.01721443
 # 0.1101603
