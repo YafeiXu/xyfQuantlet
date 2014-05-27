@@ -22,5 +22,5 @@ lines(1:12,dRanking[42,3:14],pch=1,lty=4,col=42, lwd=9)
 lines(1:12,dRanking[43,3:14],pch=1,lty=5,col=43, lwd=9)
 
 
-legend('topright', c("C_gs","C_gs1","C_t38","C_t-t","C_c (worst)"), lty=c(1:6),col=c(1:6), lwd=9,cex=1.5)
+legend('topright', c("C_gs","C_gs1","C_t38","C_t-t","C_c (worst)"), lty=c(1:6),col=c(39:43), lwd=9,cex=1.5)
 ###
