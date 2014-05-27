@@ -10,9 +10,9 @@ plot(1:12,seq(min(dRanking[39:43,3:14]),max(dRanking[39:43,3:14]),length.out=12)
 box() 
 axis(1,at=1:12, labels=FALSE)
 axis(2,at=c(0.9903, 2.1881, 3.3859, 4.5837, 5.7815))  
-mtext("Relative Difference Measure (RDM)", side=2, line=2.7, at=3.3859, font=2)  
-mtext("Pricing Date", side=1, line=3.7, at=6, font=2)  
-text(cex=1, x=1:12-.45, y=1-.5, dateC, xpd=TRUE, srt=45)  
+mtext("Relative Difference Measure (RDM)", side=2, line=2.7, at=3.3859, font=2,cex=2)  
+mtext("Pricing Date", side=1, line=3.7, at=6, font=2,cex=2)  
+text(cex=1, x=1:12-.45, y=1-.5, dateC, xpd=TRUE, srt=30)  
 #####
 
 lines(1:12,dRanking[39,3:14],pch=1,lty=1,col=39, lwd=9)

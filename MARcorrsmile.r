@@ -279,12 +279,24 @@ result5[which(result5[,1]==min(result5[,1])),]
 #####----- Plot correlation smile
 Correlation=c(0.35761523,0.01721443,0.1101603,0.18478958,0.308517)
 Tranche=c(1:5)
-plot(Tranche,Correlation,type="b",col="blue")
-text(1.3, 0.35, labels = "Equity")
-text(2, 0.05, labels = "Junior Mezzanine")
-text(3, 0.1, labels = "Senior Mezzanine")
-text(4, 0.17, labels = "Junior Senior")
-text(4.5, 0.3, labels = "Super Senior")
+dateC=c("1", "2",  "3", "4","5")
+#plot(Tranche,Correlation,type="b",col="blue")
+plot(1:5,seq(0,.4,length.out=5), xlab=" ", ylab=" ",
+type="b",pch=17, col="White",axes=FALSE, xaxt="n", yaxt="n", font=2,cex=2)
+box()
+axis(1,at=1:5, labels=FALSE)
+axis(2,at=c(0.0, 0.1, 0.2, 0.3, 0.4)) 
+mtext("Implied Compound Correlation", side=2, line=2.7, at= .2, font=2,cex=2)  
+mtext("Tranche", side=1, line=3.7, at=3, font=2,cex=2)  
+text(cex=1, x=1:5, y=-0.03, dateC, xpd=TRUE)   
+lines(Tranche,Correlation,type="b",col="blue", lwd=9,pch=17)
+text(1.3, 0.35, labels = "Equity",cex=2)
+text(2+.8, 0.03, labels = "Junior Mezzanine",cex=2)
+text(3+.8, 0.1, labels = "Senior Mezzanine",cex=2)
+text(4+.5, 0.17, labels = "Junior Senior",cex=2)
+text(4.5, 0.35, labels = "Super Senior",cex=2)
+
+
 
 
 

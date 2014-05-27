@@ -17,8 +17,8 @@ box()
 axis(1,at=1:43, labels=F)
 axis(2,at=seq(0,6,length.out=6),labels=F)  
  
-mtext("RDM", side=2, line=2.7, at=3, cex=1, font=2) 
-mtext("Model", side=1, line=3.7, at=21, cex=1, font=2) 
+mtext("Relative Difference Measure", side=2, line=2.7, at=3,  font=2,cex=2) 
+mtext("Model", side=1, line=3.7, at=21, font=2,cex=2) 
 text(cex=1.1, x=1:43-.35, y=-.61, title1, xpd=TRUE, srt=90)  
 mtext(seq(0,6,length.out=6), side=2, las=1, at=seq(0,6,length.out=6), line=.5,
 col=1, cex=1)   
