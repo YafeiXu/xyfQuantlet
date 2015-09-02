@@ -17,9 +17,13 @@ c. R Package 'CDO' and its introduction document with following link:
 https://drive.google.com/folderview?id=0B5_kdRMeek7ZUThBQUZNV3dfcVU&usp=sharing
 
 e. install the CDO package:
+
     install.packages("devtools")
+    
     library(devtools)
+    
     install_github("YafeiXu/cdo")
+    
     library(CDO)
 
 
